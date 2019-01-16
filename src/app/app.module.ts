@@ -8,7 +8,6 @@ import { CoreModule } from './core/core.module';
 import { MaterialModule } from '../material';
 import { AppComponent } from './app.component';
 import { MatNativeDateModule } from '@angular/material';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
@@ -52,4 +51,3 @@ import { UpdateUsersComponent } from './update-users/update-users.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-platformBrowserDynamic().bootstrapModule(AppModule);

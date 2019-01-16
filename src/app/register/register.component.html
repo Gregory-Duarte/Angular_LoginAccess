@@ -29,8 +29,7 @@
         </mat-form-field>
 
         <mat-form-field class="mat-card-full-width">
-          <input matInput placeholder="Password" [type]="hide ? 'text' : 'password'"  formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
-          <mat-icon class="cursor-pointer" matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          <input matInput placeholder="Password" type="password"  formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
           <mat-error *ngIf="f.password.errors && f.password.errors.required">
             Password is required
           </mat-error>
